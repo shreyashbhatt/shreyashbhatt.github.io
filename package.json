@@ -1,0 +1,26 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "Portfolio/Resume webiste for personal use",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "portfolio",
+    "resume",
+    "cv",
+    "npm",
+    "gulp",
+    "webpack",
+    "postcss"
+  ],
+  "author": "Shreyash bhatt",
+  "license": "UNLICENSED",
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-cli": "^2.3.0",
+    "postcss": "^8.1.6",
+    "webpack": "^5.4.0"
+  }
+}

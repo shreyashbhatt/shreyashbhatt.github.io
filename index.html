@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfolio website of shreyash bhatt for personal use only">
+    <title>Shreyash Bhatt Resume/Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./public/css/style.css">
+</head>
+<body>
+    <a id="side-nav-toggler" href="#"><img src="./public/Icons/icons8-menu.svg" alt="close_btn" width="30px" height="30px" class="icons"></a>
+    <nav id="side-nav" role="navigation" aria-label="Main">
+        <!-- Button to close the navigation bar -->
+        <span class="side-nav__nav-close-btn">
+            <img src="./public/Icons/icons8-cancel.svg" alt="close_btn" width="32" height="32" class="icons">
+        </span>
+
+        <!-- Profile Picture -->
+        <div class="profile-pic">
+            <img src="./public/profile-pic.jpg" alt="profile_pic.jpeg" class="profile-pic__image" width="120" height="120">
+        </div>
+
+        <!-- Social links -->
+        <div class="social-links">
+            <ul class="socials-list">
+                <li class="socials-list__element">
+                    <a href="https://github.com/shreyashbhatt" target="_blank">
+                        <img src="./public/Icons/GitHub-Mark-120px-plus.png" alt="Github profile" class="icons" width="32" height="32">
+                    </a>
+                </li>
+                <li class="socials-list__element">
+                    <a href="https://linkedin.com/in/shreyash-bhatt" target="_blank">
+                        <img src="./public/Icons/icons8-linkedin-circled.svg" alt="Linked in profile" class="icons" width="32" height="32">
+                    </a>
+                </li>
+                <li class="socials-list__element">
+                    <a href="tel:+919690222812" target="_blank">
+                        <img src="./public/Icons/icons8-whatsapp-64.png" alt="whatsapp or call" class="icons"  width="32" height="32">
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="menu">
+            <div class="menu-item">
+                <a href="#home">
+                    <img src="./public/Icons/icons8-home.svg" alt="home" class="icons"> 
+                    <span class="menu-item__text">Home</span>
+                </a>
+            </div>
+            <div class="menu-item">
+                <a href="#about">
+                    <img src="./public/Icons/icons8-info.svg" alt="home" class="icons">
+                    <span class="menu-item__text">About</span>
+                </a>
+            </div>
+            <div class="menu-item">
+                <a href="#projects">
+                    <img src="./public/Icons/icons8-info.svg" alt="home" class="icons">
+                    <span class="menu-item__text">Projects</span>
+                </a>
+            </div>
+            <div class="menu-item">
+                <a href="#cv">
+                    <img src="./public/Icons/icons8-scroll.svg" alt="home" class="icons">
+                    <span class="menu-item__text">Download CV</span>
+                </a>
+            </div>
+            <div class="menu-item">
+                <a href="#contact"><img src="./public/Icons/icons8-file-128.png" alt="home" class="icons">
+                    <span class="menu-item__text">Contact</span>
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main section -->
+    <main class="home-banner" id="home">
+        <img src="./public/Icons/pexels-kevin-ku-577585.jpg" alt="Home banner image">
+        <div class="overlay"></div>
+        <h1 class="home-banner__tagline">Hi, I'm Shreyash. Software developer driven by <strike>profession</strike> passion.</h1>
+        <div class="find-more">
+            <p class="find-more__text">Click here to find more</p>
+            <span id="find-more__btn">
+                <img alt="find more" class="find-more__icon icons" width="32" height="32" src="data:image/png;base64,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"/>
+            </span>
+        </div>
+    </main>
+
+    <!-- Education section -->
+    <section class="wrapper" id="about">
+        <div class="education flex-col">
+            <h3 class="section-heading">Education</h3>
+            <div class="education-component">
+                <div class="education-component__institute"><h5>Invertis University</h5></div>
+                <div class="education-component__year">2015 - 2019</div>
+                <div class="education-component__description">Bachelor Of Technology (Computer Science and Engineering) - 61.2%</div>
+            </div>
+    
+            <div class="education-component">
+                <div class="education-component__institute"><h5>Invertis University</h5></div>
+                <div class="education-component__year">2013 - 2014</div>
+                <div class="education-component__description">XII - 72%</div>
+            </div>
+    
+            <div class="education-component">
+                <div class="education-component__institute"><h5>Invertis University</h5></div>
+                <div class="education-component__year">2011 - 2012</div>
+                <div class="education-component__description">X - 9.4 CGPA</div>
+            </div>
+        </div>
+
+        <div class="skills flex-col">
+            <h3 class="section-heading">Skills</h3>
+            <div class="programming-languages sub-section">
+                <h5>Programming Languages</h5>
+                <table>
+                    <tr>
+                        <td>
+                            <div class="skill-item">
+                                <span class="skill-item__name">Java</span>
+                                <progress class="skill-item__expertise" value="4" max="5"></progress>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="skill-item">
+                                <span class="skill-item__name">JavaScript</span>
+                                <progress class="skill-item__expertise" value="4" max="5"></progress>
+                            </div>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+
+            <div class="devops sub-section">
+                <h5>DevOps</h5>
+                <table>
+                    <tr>
+                        <td>
+                            <div class="skill-item">
+                                <span class="skill-item__name">Docker</span>
+                                <progress class="skill-item__expertise" value="4" max="5"></progress>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="skill-item">
+                                <span class="skill-item__name">Kubernetes</span>
+                                <progress class="skill-item__expertise" value="4" max="5"></progress>
+                            </div>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+
+            <div class="others sub-section">
+                <h5>Others</h5>
+                <table>
+                    <tr>
+                        <td>
+                            <div class="skill-item">
+                                <span class="skill-item__name">HTML</span>
+                                <progress class="skill-item__expertise" value="4" max="5"></progress>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="skill-item">
+                                <span class="skill-item__name">CSS</span>
+                                <progress class="skill-item__expertise" value="4" max="5"></progress>
+                            </div>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects section -->
+    <section class="wrapper" id="projects">
+        <!-- <h1 class="section-heading">Projects</h1> -->
+        <div class="project-item">
+            <div class="project-item__img">
+                <img src="./public/profile-pic.jpg" alt="Attendance_management_system.jpg">
+            </div>
+            <div class="project-item__body">
+                <div class="project-item__heading">AMS</div>
+                <div class="project-item__description"></div>
+            </div>
+        </div>
+
+        <div class="project-item">
+            <div class="project-item__img">
+                <img src="./public/profile-pic.jpg" alt="Attendance_management_system.jpg">
+            </div>
+            <div class="project-item__body">
+                <div class="project-item__heading">AMS</div>
+                <div class="project-item__description"></div>
+            </div>
+        </div>
+
+        <div class="project-item">
+            <div class="project-item__img">
+                <img src="./public/profile-pic.jpg" alt="Attendance_management_system.jpg">
+            </div>
+            <div class="project-item__body">
+                <div class="project-item__heading">AMS</div>
+                <div class="project-item__description"></div>
+            </div>
+        </div>
+
+        <div class="project-item">
+            <div class="project-item__img">
+                <img src="./public/profile-pic.jpg" alt="Attendance_management_system.jpg">
+            </div>
+            <div class="project-item__body">
+                <div class="project-item__heading">AMS</div>
+                <div class="project-item__description"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CV section -->
+    <section class="wrapper" id="cv">
+        <h1>CV</h1>
+    </section>
+
+    <!-- Contact me section -->
+    <section class="wrapper" id="contact">
+        <h1>Contact</h1>
+    </section>
+
+    <script>
+        let closeNavBtn = document.getElementsByClassName("side-nav__nav-close-btn")[0];
+        let findOutMoreBtn = document.getElementById("find-more__btn");
+        let sideNavOpenBtn = document.getElementById("side-nav-toggler");
+
+        sideNavOpenBtn.addEventListener("click", sideNavHandler);
+        closeNavBtn.addEventListener("click", sideNavHandler);
+
+        function sideNavHandler(event) {
+            event.preventDefault();
+            event.stopPropagation();
+            let sideNav = document.getElementById("side-nav");
+            sideNav.classList.toggle("open");
+        }
+
+        findOutMoreBtn.addEventListener("click", function(event) {
+            
+            window.scrollTo({
+                top: window.innerHeight,
+                behavior: 'smooth'
+            });
+            console.log("clicked", window.innerHeight);
+        });
+        window.addEventListener("keydown", function(event) {
+            let sideNav = document.getElementById("side-nav");
+            sideNav.style.transform = "translateX(0)";
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,7 @@
+#side-nav {
+    background: var(--side-nav-blue);
+}
+
+.profile-pic__image {
+    border-radius: 50%;
+}
